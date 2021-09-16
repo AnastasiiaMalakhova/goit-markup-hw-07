@@ -1,0 +1,31 @@
+.section-list {
+  display: flex;
+
+  & > .item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .item {
+    position: relative;
+  }
+}
+
+.section-list-item {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: var(--bgc-section-list-item);
+}
+
+.section-list-description {
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+}
