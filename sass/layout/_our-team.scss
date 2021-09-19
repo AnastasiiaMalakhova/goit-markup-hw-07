@@ -1,52 +1,38 @@
-.section-team .item {
-  flex-basis: calc((100% - 90px) / 4);
-  background-color: var(--white-color);
-}
-
-.section-title-team,
-.section-team-profession {
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-}
-
-.section-title-team {
-  font-weight: 500;
-}
-
-.section-team-profession {
-  color: var(--second-text-color);
-  margin-top: 10px;
-}
-
-.team.section {
+.team {
   background-color: var(--light--bgc);
 }
 
-.section-team {
+.team__list {
   display: flex;
+}
 
-  & > .item:not(:last-child) {
+.team__item {
+  flex-basis: calc((100% - 90px) / 4);
+  background-color: var(--white-color);
+
+  &:not(:last-child) {
     margin-right: 30px;
   }
 }
 
-.team-name {
+.team__field {
   padding: 30px 32px;
   border-radius: 5px;
   box-shadow: var(--card-shadow);
 }
 
-.icon-team-list {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  flex-basis: calc((100% - 30px) / 4);
-  margin-top: 16px;
-  width: 206px;
-  height: 44px;
+.team__name,
+.team__profession {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
 
-  &.item-team:not(:last-child) {
-    margin-right: 10px;
-  }
+.team__name {
+  font-weight: 500;
+}
+
+.team__profession {
+  color: var(--second-text-color);
+  margin-top: 10px;
 }

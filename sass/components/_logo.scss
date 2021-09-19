@@ -5,16 +5,16 @@
   font-size: 26px;
   line-height: 1.19;
   margin-right: 93px;
+}
 
-  .accent {
-    color: var(--accent-color);
-  }
+.logo__accent {
+  color: var(--accent-color);
+}
 
-  .footer & {
-    color: var(--white-color);
+.footer__logo {
+  color: var(--white-color);
 
-    display: inline-block;
-    margin-bottom: 20px;
-    margin-right: auto;
-  }
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-right: auto;
 }

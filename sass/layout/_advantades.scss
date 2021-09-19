@@ -2,40 +2,37 @@
   padding-bottom: 0px;
 }
 
-.advantades-list {
-  display: flex;
-
-  .title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.42;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-  }
-
-  & > .item:not(:last-child) {
-    margin-right: 30px;
-  }
+.advantades__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.42;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
-.advantades-list.descriptoin {
+.advantades__list {
+  display: flex;
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+.advantades__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.advantades__text {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  margin-bottom: 10px;
+}
+
+.advantades__descriptoin {
   color: var(--second-text-color);
   line-height: 1.71;
 }
 
-.section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.advantades-list.list > .item {
-  flex-basis: calc((100% - 90px) / 4);
-}
-
-.icon-advantades {
+.advantades__icon {
   display: flex;
   justify-content: center;
   align-items: center;

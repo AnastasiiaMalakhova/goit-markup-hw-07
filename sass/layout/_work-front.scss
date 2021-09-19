@@ -1,16 +1,16 @@
-.section-list {
+.section__list {
   display: flex;
+}
 
-  & > .item:not(:last-child) {
+.section__item {
+  position: relative;
+
+  &:not(:last-child) {
     margin-right: 30px;
-  }
-
-  .item {
-    position: relative;
   }
 }
 
-.section-list-item {
+.section__field {
   position: absolute;
   display: flex;
   align-items: center;
@@ -21,7 +21,7 @@
   background-color: var(--bgc-section-list-item);
 }
 
-.section-list-description {
+.section__description {
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;

@@ -1,18 +1,13 @@
 .header {
   border-bottom: 1px solid var(--border-header);
-
-  .container {
-    display: flex;
-    align-items: center;
-  }
-
-  .site-navigation {
-    display: flex;
-    align-items: center;
-  }
 }
 
-.header-link {
+.header__site-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header__link {
   display: inline-block;
 
   color: var(--first-text-color);
@@ -23,50 +18,46 @@
   padding-top: 32px;
   padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
-.contacts-header .header-link {
+.header__link--light {
   color: var(--second-text-color);
 }
 
-.header-link:hover,
-.header-link:focus {
-  color: var(--accent-color);
-}
-
-.site-nav {
-  display: flex;
-
-  .item {
-    position: relative;
-  }
-
-  .item:not(:last-child) {
-    margin-right: 50px;
-  }
-}
-
-.contacts-header {
-  display: flex;
-  margin-left: auto;
-
-  .item:not(:last-child) {
-    margin-right: 50px;
-  }
-}
-
-.item > .header-link.icon {
+.header__link--flex {
   display: flex;
   align-items: center;
 }
 
-.icon-header {
+.header__site-nav {
+  display: flex;
+}
+
+.header__contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.header__item {
+  position: relative;
+}
+
+.header__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header__icon {
   margin-right: 10px;
   fill: currentColor;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .header-link:hover &,
-  .header-link:focus & {
+  .header__link:hover &,
+  .header__link:focus & {
     fill: var(--accent-color);
   }
 }
